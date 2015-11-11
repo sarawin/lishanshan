@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>waterfall</title>
+	<link rel="stylesheet" href="../static/waterfall/css/common.css">
+</head>
+<body>
+	<div id="waterfall" class="container">
+		<div class="grid">
+			<img src="http://www.wookmark.com/images/thumbs/546310_wookmark.jpg">
+			<p>Daily Inspiration #2223 | Abduzeedo Design Inspiration</p>
+		</div>
+		<div class="grid">
+			<img src="http://www.wookmark.com/images/thumbs/546323_wookmark.jpg">
+			<p>Daily Inspiration #2223 | Abduzeedo Design Inspiration</p>
+		</div>
+		<div class="grid">
+			<img src="http://www.wookmark.com/images/thumbs/546360_wookmark.jpg">
+			<p>Daily Inspiration #2223 | Abduzeedo Design Inspiration</p>
+		</div>
+		<div class="grid">
+			<img src="http://www.wookmark.com/images/thumbs/546376_wookmark.jpg">
+			<p>Daily Inspiration #2223 | Abduzeedo Design Inspiration</p>
+		</div>
+		<div class="grid">
+			<img src="http://www.wookmark.com/images/thumbs/546398_wookmark.jpg">
+			<p>Daily Inspiration #2223 | Abduzeedo Design Inspiration</p>
+		</div>
+		<div class="grid">
+			<img src="http://www.wookmark.com/images/thumbs/546456_wookmark.jpg">
+			<p>Daily Inspiration #2223 | Abduzeedo Design Inspiration</p>
+		</div>
+
+	</div>
+
+	<script src="../sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+	<script>
+		// Set configuration
+		seajs.config({
+			base: "../sea-modules/",
+			alias: {
+				"jquery": "jquery/jquery/1.10.1/jquery.js",
+				"handlebars": "handlebars/2.0.0/handlebars-v2.0.0.js"
+			}
+		});
+
+		seajs.use("../static/waterfall/src/main");
+	</script>
+	<!--Handlebars.js模版-->
+	<script id="template" type="text/x-handlebars-template">
+		{{#each this}}
+			<div class="grid" id= "{{id}}">
+				<img src="{{preview}}" height = "{{height}}">
+				<p>{{title}}</p>
+			</div>
+		{{/each}}
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+	background: #eee;
+}
+.container{
+	position: relative;
+	margin: 20px auto;
+}
+.grid{
+	width:230px;
+	padding:10px;
+	position:absolute;
+	background-color:white;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	transition: top 1s ease, left 1s ease;
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+	border-radius: 3px;
+}
+.grid img{
+	width:230px;
+	display:block;
+}

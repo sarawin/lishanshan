@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>waterfall</title>
+	<link rel="stylesheet" href="../static/waterfall_loading/css/common.css">
+</head>
+<body>
+	<div id="waterfall" class="container">
+		<p id="load">正在加载……</p>
+	</div>
+
+	<script src="../sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+	<script>
+		// Set configuration
+		seajs.config({
+			base: "../sea-modules/",
+			alias: {
+				"jquery": "jquery/jquery/1.10.1/jquery.js",
+				"handlebars": "handlebars/2.0.0/handlebars-v2.0.0.js"
+			}
+		});
+
+		seajs.use("../static/waterfall_loading/src/main");
+	</script>
+
+</body>
+</html>
